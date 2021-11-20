@@ -160,9 +160,14 @@ nav {
 }
 
 .nav-list a:hover {
-  font-size: var(--h1-size);
-  text-decoration: underline;
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .nav-list a {
+    padding: 2em;
+    font-size: var(--h3-size);
+  }
 }
 
 .nav-toggle {
@@ -482,9 +487,11 @@ footer a:active, footer a:visited {
   opacity: 0.7;
   text-align: center;
 }
+
 .spotify:hover {
   opacity: 1;
 }
+
 .section-title-spotify {
   margin-bottom: 4em;
 }

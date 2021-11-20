@@ -94,8 +94,8 @@ h3 {
 
 .section-title {
   font-family: var(--font-secondary);
-  margin-bottom: .25em;
-  letter-spacing: .02em;
+  margin-bottom: 0.25em;
+  letter-spacing: 0.05em;
 }
 
 .section-subtitle {
@@ -156,6 +156,7 @@ nav {
   padding: 0.5em;
   text-decoration: none;
   opacity: 0.85;
+  letter-spacing: 0.05em;
   font-family: var(--font-secondary);
 }
 
@@ -442,7 +443,8 @@ footer a:active, footer a:visited {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin: 4em 0;
+  margin: 4em auto;
+  max-width: 600px;
   padding: 0;
 }
 
@@ -452,6 +454,12 @@ footer a:active, footer a:visited {
 
 .social-list-item a {
   padding: 1em;
+}
+
+@media only screen and (max-width: 600px) {
+  .social-list {
+    flex-direction: column;
+  }
 }
 
 .score-counter-content {
